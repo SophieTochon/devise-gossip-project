@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180213062753) do
+ActiveRecord::Schema.define(version: 20180213105020) do
 
   create_table "gossips", force: :cascade do |t|
     t.integer "moussaillon_id"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20180213062753) do
     t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "sign_up_code"
     t.index ["email"], name: "index_moussaillons_on_email", unique: true
     t.index ["reset_password_token"], name: "index_moussaillons_on_reset_password_token", unique: true
   end

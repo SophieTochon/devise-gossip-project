@@ -26,6 +26,11 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+    <%= f.label :sign_up_code, "Code ultra secret" %><br />
+    <%= f.text_field :sign_up_code, autocomplete: "off" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Créer un compte" %>
   </div>
