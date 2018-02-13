@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
-
-  # authentification
   gem 'devise'
-  #gem 'pundit'
+  gem 'bootstrap-sass'
 
 
   gem 'rails'

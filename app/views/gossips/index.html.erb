@@ -1,0 +1,20 @@
+<h1>The Gossip Project</h1>
+
+<% if moussaillon_signed_in? %>
+
+   <% @gossips.each do |gossip| %>
+     <ul>
+      <li><%= gossip.moussaillon.username %> pense que "<%= gossip.content %>"</li>
+      Créé le <%= gossip.created_at.strftime("%d.%m.%Y") %>
+
+      <% if current_moussaillon == gossip.moussaillon %>
+      <%= link_to "Supprimer ce gossip", gossip_path(gossip), method: :delete %>
+      <% end %>
+     </ul>
+  <% end %>
+
+<% else %>
+
+  <p> Tu dois <%= link_to "t'inscrire", new_moussaillon_registration_path %> ou <%= link_to "te connecter", new_moussaillon_session_path %> pour accéder aux gossips ! </p>
+
+<% end %>
