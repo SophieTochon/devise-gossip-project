@@ -1,24 +1,7 @@
-# README
+## Hello !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+L'app est disponible sur Heroku par ici : https://stark-hamlet-71857.herokuapp.com/
 
-Things you may want to cover:
+Il y a tout sauf les tests, j'avoue, j'ai capitulé.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+** Have fun ** 🌴
